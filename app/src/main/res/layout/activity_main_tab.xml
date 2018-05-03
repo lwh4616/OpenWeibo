@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="android.support.v4.view.PagerAdapter" />
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="2dp"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:gravity="center_horizontal"
+                android:text="微博" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="2dp"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:gravity="center_horizontal"
+                android:text="微博" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="2dp"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:gravity="center_horizontal"
+                android:text="微博" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="2dp"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:gravity="center_horizontal"
+                android:text="微博" />
+
+        </LinearLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tab_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_bar"
+            app:adapter="@{adapter}">
+
+        </android.support.v4.view.ViewPager>
+
+
+    </RelativeLayout>
+
+</layout>
